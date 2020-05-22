@@ -43,7 +43,7 @@
             }
         },
         methods: {
-            // The function handleSubmitForm is created
+            // The function handleSubmitForm is createdd
             handleSubmitForm() {
                 // URL connected to our backend is used by Axios to update the student-list with the new student
                 let apiURL = 'api/create-student';
