@@ -44,7 +44,7 @@
         },
         // Axios is connected with our backend and Students is updated with a list of students
         created() {
-            let apiURL = 'http://localhost:4000/api';
+            let apiURL = 'api';
             axios.get(apiURL).then(res => {
                 this.Students = res.data;
             }).catch(error => {
