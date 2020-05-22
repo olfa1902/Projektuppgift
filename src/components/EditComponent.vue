@@ -48,7 +48,7 @@ export default {
     methods: {
         // Function gets studentid and Axios updates the backend information
         handleUpdateForm() {
-            let apiURL = `http://localhost:4000/api/update-student/${this.$route.params.id}`;
+            let apiURL = `api/update-student/${this.$route.params.id}`;
 
             axios.post(apiURL, this.student).then((res) => {
                 console.log(res)

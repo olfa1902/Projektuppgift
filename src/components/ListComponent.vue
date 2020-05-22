@@ -55,7 +55,7 @@
             // Here our function deleteStudent is made
             deleteStudent(id){
                 // Id is used to determine the post
-                let apiURL = `http://localhost:4000/api/delete-student/${id}`;
+                let apiURL = `api/delete-student/${id}`;
                 let indexOfArrayItem = this.Students.findIndex(i => i._id === id);
 
                 // A confirmation-warning is made and if true, the post is spliced and removed from the array
