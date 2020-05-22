@@ -46,7 +46,7 @@
             // The function handleSubmitForm is created
             handleSubmitForm() {
                 // URL connected to our backend is used by Axios to update the student-list with the new student
-                let apiURL = 'http://localhost:4000/api/create-student';
+                let apiURL = 'api/create-student';
                 
                 axios.post(apiURL, this.student).then(() => {
                   this.$router.push('/view')
