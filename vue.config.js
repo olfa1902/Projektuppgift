@@ -5,7 +5,7 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://localhost:4000'
+                target: 'https://intense-basin-16922.herokuapp.com'
             }
         }
     }
