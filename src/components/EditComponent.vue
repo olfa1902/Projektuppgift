@@ -39,7 +39,7 @@ export default {
     },
     created() {
         // The information of the student is fetched from our backend
-        let apiURL = `http://localhost:4000/api/edit-student/${this.$route.params.id}`;
+        let apiURL = `api/edit-student/${this.$route.params.id}`;
 
         axios.get(apiURL).then((res) => {
             this.student = res.data;
