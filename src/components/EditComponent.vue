@@ -39,7 +39,7 @@ export default {
     },
     created() {
         // The information of the student is fetched from our backend
-        let apiURL = `api/edit-student/${this.$route.params.id}`;
+        let apiURL = `/api/edit-student/${this.$route.params.id}`;
 
         axios.get(apiURL).then((res) => {
             this.student = res.data;
@@ -48,7 +48,7 @@ export default {
     methods: {
         // Function gets studentid and Axios updates the backend information
         handleUpdateForm() {
-            let apiURL = `api/update-student/${this.$route.params.id}`;
+            let apiURL = `/api/update-student/${this.$route.params.id}`;
 
             axios.post(apiURL, this.student).then((res) => {
                 console.log(res)
