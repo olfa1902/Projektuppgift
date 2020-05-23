@@ -5,7 +5,7 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://intense-basin-16922.herokuapp.com'
+                target: 'https://glacial-reaches-15223.herokuapp.com'
             }
         }
     }
